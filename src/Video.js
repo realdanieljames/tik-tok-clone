@@ -1,9 +1,13 @@
 import React, {useRef, useState} from 'react'
 
 import VideoFooter from './VideoFooter'
+import VideoSidebar from './VideoSidebar'
+
 import './Video.css'
 
-function Video() {
+function Video({
+    url, channel, description, song, likes, messages, shares,
+}) {
 
     const[playing, setPlaying]= useState(true)
 
@@ -37,10 +41,16 @@ function Video() {
                 loop
                 onClick={onVideoPress}
                 ref={videoRef}
-                src="https://www.w3schools.com/tags/movie.ogg">
+                src={url}>
             </video>
-            <VideoFooter/>
 
+            <VideoFooter 
+                channel={channel}
+                description={description}
+                song= {song}
+            />
+
+            <VideoSidebar  likes ={likes} messages={messages} shares={shares}/>
 
         </div>
     )
