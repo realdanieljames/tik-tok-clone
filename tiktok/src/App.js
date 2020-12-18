@@ -33,7 +33,14 @@ function App() {
 
 
          /> */}
-        <Video />
+        <Video 
+              url='https://www.w3schools.com/html/mov_bbb.mp4'
+              channel='bunnyman'
+              description="gotta catch em all"
+              song="The bunny discover"
+              likes={123}
+              messages={123}
+              shares={123}/>
         <Video />
       </div>
 
@@ -43,3 +50,4 @@ function App() {
 }
 
 export default App;
+{/* <iframe width="1228" height="541" src="https://www.youtube.com/embed/I3AaW9ZevIU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
