@@ -1,6 +1,7 @@
 import express from 'express';
 import mongoose from 'mongoose';
 
+
 import Data from './data.js';
 import Videos from './dbModel.js'
 
@@ -21,9 +22,9 @@ const port = 9000;
 //parse response
 app.use(express.json())
 app.use((req, res, next) => {
-    res.setHeaders('Access-Control-Allow-Origin', '*'),
-    res.setHeaders('Access-Control-Allow-Headers', '*'),
-    next() 
+    res.setHeader('Access-Control-Allow-Origin', '*'),
+        res.setHeader('Access-Control-Allow-Headers', '*'),
+        next()
 })
 
 
@@ -56,6 +57,7 @@ app.post("/v2/posts", (req, res) => {
 
 
     Videos.create(dbVideos, (err, data) => {
+        console.log(dbVideos)
         if (err) {
             res.status(500).send(err)
         } else {

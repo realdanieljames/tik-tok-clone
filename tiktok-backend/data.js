@@ -1,6 +1,8 @@
-const data = [
-    {
-        url: 'https://www.w3schools.com/tags/movie.mp4',
+const data = [{
+        // url: '/Users/danieljames/CodeImmersives-WebDev/Projects/tik-tok-clone/tiktok-backend/media/mov1.MOV',
+        // url: 'https://www.w3schools.com/html/mov_bbb.mp4',
+
+        url: 'https:///www.w3schools.com/tags/movie.mp4',
         channel: 'danieljames',
         description: "WOW this works...",
         song: "The sunny song",
@@ -9,15 +11,16 @@ const data = [
         shares: "123",
     },
     {
-        url: 'https://youtu.be/I3AaW9ZevIU',
-        channel: 'danieljames',
-        description: "WOW this works...",
-        song: "The sunny song",
-        likes: "240",
-        messages: "323",
-        shares: "130",
+        url: 'https://www.w3schools.com/html/mov_bbb.mp4',
+        channel: 'bunnyman',
+        description: "gotta catch em all",
+        song: "The bunny discover",
+        likes: "580",
+        messages: "389",
+        shares: "256",
 
-}
+
+    }
 ];
 
 export default data;
